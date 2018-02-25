@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_index_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kh2191.digi_invi.indexScreen">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/redcolor"
+        android:id="@+id/layoutChits"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/chitfund"
+            android:id="@+id/imgChit" />
+
+        <TextView
+            android:text="Chits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lblChits"
+            android:layout_below="@+id/imgChit"
+            android:textColor="#ffffff"
+            android:textSize = "20dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/greencolor"
+        android:layout_toRightOf = "@+id/layoutChits"
+        android:id="@+id/layMyChits"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/chitfund"
+            android:id="@+id/imgMyChit" />
+
+        <TextView
+            android:text="My Chits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lblMyChits"
+            android:layout_below="@+id/imgMyChit"
+            android:textColor="#ffffff"
+            android:textSize = "20dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/orangecolor"
+        android:layout_below= "@+id/layoutChits"
+        android:id="@+id/laySchdule"
+        android:visibility="invisible"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/cal_white"
+            android:id="@+id/imgSchedule" />
+
+        <TextView
+            android:text="Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lblSchedule"
+            android:layout_below="@+id/imgSchedule"
+            android:textColor="#ffffff"
+            android:textSize = "20dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/blueclor"
+        android:layout_below="@+id/layMyChits"
+        android:id="@+id/layLogout"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logout"
+            android:id="@+id/imgLogut" />
+
+        <TextView
+            android:text="LogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lblLogout"
+            android:layout_below="@+id/imgLogut"
+            android:textColor="#ffffff"
+            android:textSize = "20dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

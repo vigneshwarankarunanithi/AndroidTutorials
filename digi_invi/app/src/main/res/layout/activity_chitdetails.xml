@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chitdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    tools:context="com.example.kh2191.digi_invi.chitdetails">
+
+    <TextView
+        android:text="About the Chit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:id="@+id/lblAbtTitle" />
+
+    <TextView
+        android:text=""
+        android:layout_width="108dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/black_overlay"
+        android:id="@+id/lblLine"
+        android:layout_below="@+id/lblAbtTitle" />
+
+    <TextView
+        android:text="Chit means a transaction whether called chit, chit fund, chitty, kuree or by any other name by or under which a person enters into an agreement with a specified number of persons that every one of them shall subscribe a certain sum of money (or a certain quantity of grain instead) by way of periodical installments over a definite period and that each such subscriber shall, in his turn, as determined by lot or by auction or by tender or in such other manner as may be specified in the chit agreement, be entitled to the prize amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lblChitDesc"
+        android:layout_below="@+id/lblLine" />
+
+    <TextView
+        android:text="Amount Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/lblChitDesc"
+        android:id="@+id/lblAmountTitle" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAmountTitle"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/border_black"
+        android:id = "@+id/amountDetails"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="Total Amount : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:id="@+id/lblTotalAmountTitle" />
+
+        <TextView
+            android:text="Rs.10,000/- "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblTotalAmountTitle"
+            android:id="@+id/lblTotalAmount" />
+        <TextView
+            android:text="Amount Per Month : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/lblTotalAmountTitle"
+            android:id="@+id/lblTotalAmountPerMnthTitle" />
+
+        <TextView
+            android:text="Rs.1000/- "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblTotalAmountPerMnthTitle"
+            android:layout_below="@+id/lblTotalAmountTitle"
+            android:id="@+id/lblTotalAmountPerMnth" />
+
+        <TextView
+            android:text=""
+            android:layout_width="1dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblTotalAmountPerMnthTitle"
+            android:layout_below="@+id/lblTotalAmountPerMnth"
+            android:id="@+id/lbldummy" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Other Details : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/amountDetails"
+        android:id="@+id/lblPeriodTitle" />
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPeriodTitle"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/border_black"
+        android:id="@+id/periodDetails"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="Start Date : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:id="@+id/lblStartDateTitle" />
+
+        <TextView
+            android:text="20 Nov 2017 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblStartDateTitle"
+            android:id="@+id/lblStartDate" />
+        <TextView
+            android:text="Total Time Period : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/lblStartDate"
+            android:id="@+id/lblTotalTPTitle" />
+
+        <TextView
+            android:text="10 Months "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblTotalTPTitle"
+            android:layout_below="@+id/lblStartDate"
+            android:id="@+id/lblTTP" />
+
+        <TextView
+            android:text="Members : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/lblTTP"
+            android:id="@+id/lblMembersTitle" />
+
+        <TextView
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblMembersTitle"
+            android:layout_below="@+id/lblTTP"
+            android:id="@+id/lblMembers" />
+
+        <TextView
+            android:text="@string/title_GotoMemberList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#000ced"
+            android:textStyle="italic"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblMembers"
+            android:layout_below="@+id/lblTTP"
+            android:id="@+id/lblGoToMembers" />
+
+        <TextView
+            android:text=""
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#5c5555"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/lblMembersTitle"
+            android:layout_below="@+id/lblMembers"
+            android:id="@+id/lblDummy2" />
+
+    </RelativeLayout>
+
+    <Button
+        android:text="JOIN NOW"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/periodDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#0eae1e"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/btnJoin" />
+
+
+</RelativeLayout>

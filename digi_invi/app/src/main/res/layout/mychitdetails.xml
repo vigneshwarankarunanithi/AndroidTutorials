@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="180dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/expandableheader">
+
+    <TextView
+        android:id="@+id/currentChitHoldTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Chit Holder :"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/currentChitHolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vigneshwaran Karunaithi"
+        android:textColor="#696969"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_below="@id/currentChitHoldTitle"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/NextChitDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Chit Date :"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_below="@id/currentChitHolderName"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/NextChitDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vigneshwaran Karunaithi"
+        android:textColor="#696969"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_below="@id/NextChitDateTitle"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:text="@string/title_GotoMemberList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000ced"
+        android:textStyle="italic"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/NextChitDate"
+        android:id="@+id/lblGoToMembers" />
+
+</RelativeLayout>
